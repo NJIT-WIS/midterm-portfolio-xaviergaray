@@ -1,0 +1,27 @@
+{
+  "name": "midterm",
+  "version": "1.0.0",
+  "description": "This is my individual project for class using node, playwright, lighthouse, and git",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NJIT-WIS/midterm-portfolio-xaviergaray.git"
+  },
+  "keywords": [
+    "midterm",
+    "project"
+  ],
+  "author": "Xavier Garay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NJIT-WIS/midterm-portfolio-xaviergaray/issues"
+  },
+  "homepage": "https://github.com/NJIT-WIS/midterm-portfolio-xaviergaray#readme"
+}
