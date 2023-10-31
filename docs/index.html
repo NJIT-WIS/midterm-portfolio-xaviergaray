@@ -57,8 +57,17 @@
             </a>
         </div>
     </div>
+
     <div class="rectangle"></div>
 
-    </div>
+    <script>
+        document.addEventListener("scroll", function() {
+                var maxScrollY = 250;
+                if (window.scrollY > maxScrollY) {
+                    window.scrollTo(0, maxScrollY);
+                }
+            });
+    </script>
+    
 </body>
 </html>
