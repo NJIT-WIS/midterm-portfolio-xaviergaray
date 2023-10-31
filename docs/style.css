@@ -209,3 +209,361 @@ body {
     bottom: 0;
     z-index: 200;
 }
+  
+@media (max-width: 767px) and (max-height: 915px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #030002af;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        padding: 0.53vw 1.07vw; 
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 1.6vw; 
+        box-shadow: 0px 0.53vw 0.53vw rgba(0, 0, 0, 0.8); 
+        border-radius: 0.43vw; 
+    }
+    
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.53vw 2.14vw;
+        transition: background-color 0.3s, text-shadow 0.3s, box-shadow 0.3s;
+    }
+    
+    .navbar a:hover {
+        text-shadow: 0px 0px 0.53vw #fff, 0px 0px 0.27vw #aaa;
+    }
+    
+    .nav-links-left {
+        font-size: 2vw;
+        font-family: 'Inria Serif', serif;
+    }
+    
+    .nav-links-right {
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .main-content-text {
+        padding-top: 9.66vw; 
+        padding-left: 6.16vw; 
+        height: calc(100% - 5.9vw); 
+    }
+
+    .main-content-text .paragraph, .para-title {
+        color: #fafafad2;
+    }
+
+    .main-content-text .paragraph {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        width: 85vw;     
+        height: 70vh;    
+        overflow: auto;
+    }
+
+    .main-content-text .para-title {
+        font-size: 25px;
+        font-family: 'Judson', serif;
+        text-decoration: underline;
+    }
+
+    .circle {
+        width: var(--smallCircleRadius); 
+        height: var(--smallCircleRadius); 
+    }
+
+    .circle::before {
+        font-size: 9.5px;
+    }
+    
+    #begin::before {
+        font-size: 13px;
+    }
+
+    #begin {
+        width: var(--largeCircleRadius); 
+        height: var(--largeCircleRadius); 
+        top: 33vh;
+    }
+
+    #journey, #experience, #projects, #skills {
+        left: 65vw;
+    }
+
+    #journey {
+        top: var(--journeyStart);
+    }
+
+    #experience {
+        top: calc(var(--journeyStart) + var(--journeySpacing));
+    }
+
+    #projects {
+        top: calc(var(--journeyStart) + var(--journeySpacing)*2);
+    }
+
+    #skills {
+        top: calc(var(--journeyStart) + var(--journeySpacing)*3);
+    }
+
+    .line {
+        background:none;
+    }
+
+    .head-dissolve {
+        bottom: -2vh;
+        left: 9vw;
+        width: 90vw;
+    }
+}
+
+@media (max-height: 1180px) and (max-width: 1100px) and (min-width: 767px) and (min-height: 915px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #030002af;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        padding: 0.53vw 1.07vw; 
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 1.6vw; 
+        box-shadow: 0px 0.53vw 0.53vw rgba(0, 0, 0, 0.8); 
+        border-radius: 0.43vw; 
+    }
+    
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.53vw 2.14vw;
+        transition: background-color 0.3s, text-shadow 0.3s, box-shadow 0.3s;
+    }
+    
+    .navbar a:hover {
+        text-shadow: 0px 0px 0.53vw #fff, 0px 0px 0.27vw #aaa;
+    }
+    
+    .nav-links-left {
+        font-size: 2vw;
+        font-family: 'Inria Serif', serif;
+    }
+    
+    .nav-links-right {
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .main-content-text {
+        padding-top: 9.66vw; 
+        padding-left: 6.16vw; 
+        height: calc(100% - 5.9vw); 
+    }
+
+    .main-content-text .paragraph, .para-title {
+        color: #fafafad2;
+    }
+
+    .main-content-text .paragraph {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        width: 85vw;     
+        height: 70vh;    
+        overflow: auto;
+    }
+
+    .main-content-text .para-title {
+        font-size: 25px;
+        font-family: 'Judson', serif;
+        text-decoration: underline;
+    }
+
+    #begin {
+        top: 18vh;
+        height: 150px;
+        width: 150px;
+    }
+
+    .circle {
+        top: 30vh;
+        height: 94px;
+        width: 94px;
+    }
+
+    .line {
+        top: 33vh;
+    }
+
+    .head-dissolve {
+        bottom: -2vh;
+        left: 9vw;
+        width: 90vw;
+    }
+}
+
+@media (max-width: 1650px) and (min-height: 1180px) and (min-width: 1100px) {
+    .head-dissolve {
+        bottom: -2vh;
+        left: 9vw;
+        width: 90vw;
+    }
+
+    #begin {
+        top: 10vh;
+        left: 67vw;
+    }
+
+    .circle {
+        top: 26vh;
+    }
+
+    .line {
+        top: 30.5vh;
+    }
+}
+
+@media (max-width: 500px) and (max-height: 1000px) and (min-width: 767px) and (min-height: 915px) {       
+    .nav-links-left {
+        font-size: 2vw;
+    }
+    
+    .nav-links-right {
+        font-size: 3vw;
+    }
+    
+    .main-content-text .paragraph {
+        font-size: 14px; 
+        font-family: 'Roboto', sans-serif;
+        width: 85vw;     
+        height: 70vh;    
+        overflow: auto;
+    }
+    
+    .main-content-text .para-title {
+        font-size: 22px;
+    }
+
+    .head-dissolve {
+        top: 35vh;
+        width: 60vh;
+    }
+
+    .line {
+        display: none;
+    }
+
+    #begin {
+        width: 125px;
+        height: 125px;
+        top: 25vh;
+    }
+
+    #begin::before {
+        font-size: 14px;
+    }
+
+    .circle {
+        top: 45vh;
+        width: 78px;
+        height: 78px;
+    }
+
+    .circle::before {
+        font-size: 8px;
+    }
+
+    #journey, #experience, #projects, #skills {
+        left: calc(var(--beginCirclePosX) * 1.8);
+    }
+
+    #experience {
+        top: 55vh;
+    }
+
+    #projects {
+        top: 65vh;
+    }
+
+    #skills {
+        top: 75vh;
+    }
+}
+
+@media (max-width: 1100px) and (max-height: 1600px) and (min-width: 821px) and (min-height: 915px) {       
+    .nav-links-left {
+        font-size: 2vw;
+    }
+    
+    .nav-links-right {
+        font-size: 3vw;
+    }
+    
+    .main-content-text .paragraph {
+        font-size: 26px; 
+        font-family: 'Roboto', sans-serif;
+        width: 85vw;     
+        height: 70vh;    
+        overflow: auto;
+    }
+    
+    .main-content-text .para-title {
+        font-size: 42px;
+    }
+
+    .head-dissolve {
+        top: 35vh;
+        width: 60vh;
+    }
+
+    .line {
+        display: none;
+    }
+
+    #begin {
+        width: 250px;
+        height: 250px;
+        top: 23vh;
+    }
+
+    #begin::before {
+        font-size: 26px;
+    }
+
+    .circle {
+        top: 42vh;
+        width: 157px;
+        height: 157px;
+    }
+
+    .circle::before {
+        font-size: 17px;
+    }
+
+    #journey, #experience, #projects, #skills {
+        left: calc(var(--beginCirclePosX) * 1.65);
+    }
+
+    #experience {
+        top: 55vh;
+    }
+
+    #projects {
+        top: 68vh;
+    }
+
+    #skills {
+        top: 81vh;
+    }
+}
