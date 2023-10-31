@@ -45,6 +45,15 @@ body, html {
     color: #fff;
     text-decoration: none;
     padding: 0.53vw 2.14vw;
+    transition: background-color 0.3s, text-shadow 0.3s, box-shadow 0.3s;
+}
+
+.navbar a:hover {
+    text-shadow: 0px 0px 0.53vw #fff, 0px 0px 0.27vw #aaa;
+}
+
+.navbar a:focus {
+    text-shadow: 0px 0px 0.53vw #fff, 0px 0px 0.27vw #aaa;
 }
 
 .nav-links-left {
@@ -91,6 +100,7 @@ body, html {
     position: absolute;
     z-index: 100;
     top: var(--journeyCirclePosY);
+    transition: box-shadow 0.3s, filter 0.3s;
 }
 
 #begin {
@@ -155,6 +165,16 @@ body, html {
     text-decoration: none; 
     color: inherit; 
     display: inline-block;
+}
+
+.circle-container a:hover .circle {
+    box-shadow: 0 0 0.8vw 0.11vw rgba(255, 255, 255, 0.8);
+    filter: brightness(1.1);
+}
+
+.circle-container a:focus .circle {
+    box-shadow: 0 0 0.8vw 0.11vw rgba(255, 255, 255, 0.8);
+    filter: brightness(1.1);
 }
 
 .head-dissolve {
