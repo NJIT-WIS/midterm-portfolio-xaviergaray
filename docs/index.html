@@ -3,25 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Judson:400|Roboto:400|Inria+Serif:400|Raleway:400">
-    <link rel="stylesheet" href="style.css" />
-    <title>Xavier Garay Portfolio</title>
+    <title>Xavier's Portfolio</title>
 </head>
 <body>
-    <div class="overlap">
-        <div class="nav">
-            <div class="rectangle-background">
-                <a href="#" class="nav-item" id="my-journey-nav">my journey</a>
-                <a href="#" class="nav-item" id="experience-nav">experience</a>
-                <a href="#" class="nav-item" id="projects-nav">projects</a>
-                <a href="#" class="nav-item" id="skills-nav">skills</a>
-                <a href="#" class="nav-item" id="contact-nav">get in touch</a>
-            </div>
+    <div class="navbar">
+        <div class="nav-links-left">
+            <a href="#">my journey</a>
+            <a href="#">experience</a>
+            <a href="#">projects</a>
+            <a href="#">skills</a>
+            <a href="#">get in touch</a>
         </div>
-        <img class="journey-path" src="images\desktop\hero\ProdImages\journey-path.png" />
-        <img class="head-dissolve" src="images\desktop\hero\ProdImages\HeadDissolve.png" />
-        <div class="rectangle-footer"></div>
+
+        <div class="nav-links-right">
+            <a href="index.html">Xavier Garay</a>
+        </div>
+    </div>
+
+    <div class="main-content-text">
+        <div class="para-title">
+            Who Am I
+        </div>
+        <div class="paragraph">
+            <p>
+                Passionate about innovation, I specialize in transforming ideas into efficient, real-world products. Committed to bridging concept and creation, my goal is to unlock the full potential of every project and deliver impactful solutions.
+            </p>
+        </div>
+    </div>
+
+    <div class="main-content-images">
+        <img src="Images/desktop/hero/ITEM_HeadDissolve.webp" alt="Artistic representation of a human dissolving into ideas" class="head-dissolve">
+        <div class="circle-container">
+            <a href="#" aria-label="Begin employer journey">
+                <div class="circle tinted-circle" id="begin" style="background-image: url('Images/desktop/hero/SectionIcon_Begin.webp')" data-text="Begin"></div>
+            </a>
+            <a href="#" aria-label="Explore my journey">
+                <div class="line"></div>
+                <div class="circle tinted-circle" id="journey" style="background-image: url('Images/desktop/hero/SectionIcon_MyJourney.webp')" data-text="my journey"></div>
+            </a>
+            <a href="#" aria-label="Learn about my experiences">
+                <div class="circle tinted-circle" id="experience" style="background-image: url('Images/desktop/hero/SectionIcon_Experience.webp')" data-text="experience"></div>
+            </a>
+            <a href="#" aria-label="Visit my projects">
+                <div class="circle tinted-circle" id="projects" style="background-image: url('Images/desktop/hero/SectionIcon_Projects.webp')" data-text="projects"></div>
+            </a>
+            <a href="#" aria-label="View my skills">
+                <div class="circle tinted-circle" id="skills" style="background-image: url('Images/desktop/hero/SectionIcon_Skills.webp')" data-text="skills"></div>
+            </a>
+        </div>
+    </div>
+    <div class="rectangle"></div>
+
     </div>
 </body>
 </html>
