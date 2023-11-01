@@ -35,6 +35,27 @@
         <p>Your interest is appreciated.</p>
     </div>
 
+    <div class="buttons">
+        <button class="button" onclick="location.href='../journey/journey.html';">
+            <a href="../journey/journey.html">Who Am I</a>
+        </button>
+        <button class="button" onclick="location.href='../experience/experience.html';">
+            <a href="../experience/experience.html">What Have I Done</a>
+        </button>
+        <button class="button" onclick="location.href='../projects/projects.html';">
+            <a href="../projects/projects.html">What Have I Made</a>
+        </button>
+        <button class="button" onclick="location.href='../skills/skills.html';">
+            <a href="../skills/skills.html">What Can I Do</a>
+        </button>
+    </div>
+
     <div class="rectangle"></div>
+
+    <script type="text/javascript">
+        document.getElementsByClassName("button").onclick = function () {
+            location.href = "www.yoursite.com";
+        };
+    </script>
 </body>
 </html>
