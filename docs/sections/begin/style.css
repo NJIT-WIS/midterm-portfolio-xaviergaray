@@ -1,0 +1,144 @@
+:root {
+    --beginCirclePosX: 7vw;
+    --beginCirclePosY: 60vh;
+
+    --journeyCirclePosY: 85vh;
+    --journeyCirclePosX: 25vw;
+
+    --journeyCircleRad: 5vw;
+
+    --largeCircleRadius:100px;
+    --smallCircleRadius:80px;
+    --journeyStart: 35vh;
+    --journeySpacing: calc(var(--smallCircleRadius) * 2 / 1.6);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background: url('../../images/desktop/hero/BACKGROUND_Blackboard.webp') no-repeat center center fixed; 
+    background-size: cover; 
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030002af;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    padding: 0.53vw 1.07vw; 
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1.6vw; 
+    box-shadow: 0px 0.53vw 0.53vw rgba(0, 0, 0, 0.8); 
+    border-radius: 0.43vw; 
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.53vw 2.14vw;
+    transition: background-color 0.3s, text-shadow 0.3s, box-shadow 0.3s;
+}
+
+a:hover, .button:hover a, a:focus, .button:focus a {
+    text-shadow: 0px 0px 0.53vw #fff, 0px 0px 0.27vw #aaa;
+}
+
+.nav-links-left {
+    font-size: 1.21vw;
+    font-family: 'Inria Serif', serif;
+}
+
+.nav-links-right {
+    font-size: 1.93vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-content-text {
+    padding-top: 9.66vw;
+    padding-left: 6.16vw; 
+    height: calc(100% - 5.9vw); 
+}
+
+.main-content {
+    position: absolute;
+    left: 20%;
+    padding-top: 10vh;
+    width: 60vw;
+    text-align: center;
+    font-family: 'Judson', serif;
+    color: #fafafabe;
+}
+
+.main-content h1 {
+    font-size: 4vw;
+    text-decoration: underline;
+}
+
+.main-content p {
+    font-size: 2vw;
+}
+
+.main-content p a {
+    text-decoration: none;
+    color: #fafafabe;
+    transition: background-color 0.3s, text-shadow 0.3s, box-shadow 0.3s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 75vh;
+}
+
+.button {
+    width: 10vw;
+    height: 3vw;
+    background-color: #4e123d; 
+    color: #fff;
+    font-size: 1vw; 
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 4vw;
+    border-radius: 15px;
+    line-height: 60px;
+    font-family: 'Cinzel Decorative', sans-serif; 
+    text-shadow: 2px 2px 4px #000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #200d35;
+}
+
+.rectangle {
+    width: 100vw;
+    height: 2.71vh; 
+    background: radial-gradient(circle at center, #85396f,#3e2d50);
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+}
