@@ -7,7 +7,10 @@
     "doc": "docs",
     "test": "tests"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "npx playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NJIT-WIS/midterm-portfolio-xaviergaray.git"
@@ -25,5 +28,9 @@
   "devDependencies": {
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.7"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7"
   }
 }
