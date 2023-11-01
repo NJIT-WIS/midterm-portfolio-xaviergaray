@@ -94,3 +94,12 @@ body {
     font-family: 'Judson', serif;
     text-decoration: underline;
 }
+
+.rectangle {
+    width: 100vw;
+    height: 2.71vh; 
+    background: radial-gradient(circle at center, #85396f,#3e2d50);
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+}
