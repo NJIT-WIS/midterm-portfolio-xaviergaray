@@ -6,6 +6,7 @@ const skillsURL = 'http://localhost:5500/sections/skills/skills.html';
 const experienceURL = 'http://localhost:5500/sections/experience/experience.html';
 const projectsURL = 'http://localhost:5500/sections/projects/projects.html';
 const journeyURL = 'http://localhost:5500/sections/journey/journey.html';
+const beginURL = 'http://localhost:5500/sections/begin/begin.html';
 
 // Function to test link navigation
 async function testLinkNavigation(page, linkText, sourceURL, targetURL) {
@@ -14,7 +15,7 @@ async function testLinkNavigation(page, linkText, sourceURL, targetURL) {
   await link.click();
   const currentURL = page.url();
   await expect(currentURL).toBe(targetURL);
-}
+};
 
 /* Homepage tests */
 test('Xavier Garay always links to homepage', async ({ page }) => {
@@ -59,6 +60,7 @@ test('Skills links to Skills page', async ({ page }) => {
   await expect(currentURL).toBe(skillsURL);
 });
 
+
 test('My Journey bubble links to Journey page', async ({ page }) => {
   await page.goto(homepageURL);
   const myJourneyBubble = await page.locator('#journey');
@@ -102,6 +104,94 @@ test('All links have aria-labels', async ({ page }) => {
     const ariaLabel = await link.getAttribute('aria-label');
     await expect(ariaLabel).not.toBe('');
   }
+});
+
+test('Check If Rectangle Exists', async ({ page }) => {
+  await page.goto(homepageURL);
+  const rectangleSelector = '.rectangle';
+  await page.waitForSelector(rectangleSelector);
+  const isRectangleExists = await page.$(rectangleSelector) !== null;
+  await expect(isRectangleExists).toBe(true);
+});
+
+/* Begin page tests */
+test("Begin page has Xavier's Portfolio title", async ({ page }) => {
+  await page.goto(beginURL);
+  const beginTitle = await page.locator('h1:has-text("Xavier\'s Portfolio")');
+  await expect(beginTitle).toBeTruthy();
+});
+
+test('Xavier Garay always links to homepage from Begin', async ({ page }) => {
+  await page.goto(beginURL);
+  const xavierGarayLink = await page.locator('a:has-text("Xavier Garay")');
+  await xavierGarayLink.click();
+  const currentURL = page.url();
+  await expect(currentURL).toBe(homepageURL);
+});
+
+test('Begin links to Journey page from Begin', async ({ page }) => {
+  await page.goto(beginURL);
+  const links = await page.locator('a:has-text("my journey")').all();
+  for (const link of links) {
+    await link.click();
+    const currentURL = page.url();
+    await expect(currentURL).toBe(journeyURL);
+    await page.goto(beginURL);
+  }
+});
+
+test('Experience links to Experience page from Begin', async ({ page }) => {
+  await page.goto(beginURL);
+  const links = await page.locator('a:has-text("experience")').all();
+  for (const link of links) {
+    await link.click();
+    const currentURL = page.url();
+    await expect(currentURL).toBe(experienceURL);
+    await page.goto(beginURL);
+  }
+});
+
+test('Projects links to Projects page from Begin', async ({ page }) => {
+  await page.goto(beginURL);
+  const links = await page.locator('a:has-text("projects")').all();
+  for (const link of links) {
+    await link.click();
+    const currentURL = page.url();
+    await expect(currentURL).toBe(projectsURL);
+    await page.goto(beginURL);
+  }
+});
+
+test('Skills links to Skills page from Begin', async ({ page }) => {
+  await page.goto(beginURL);
+  const links = await page.locator('a:has-text("skills")').all();
+  for (const link of links) {
+    await link.click();
+    const currentURL = page.url();
+    await expect(currentURL).toBe(skillsURL);
+    await page.goto(beginURL);
+  }
+});
+
+test('All links in Begin have aria-labels', async ({ page }) => {
+  await page.goto(beginURL);
+
+  // Locate all <a> elements within the <body> element.
+  const links = await page.$$('body a');
+
+  // Iterate through each <a> element and check for the presence of aria-label attribute.
+  for (const link of links) {
+    const ariaLabel = await link.getAttribute('aria-label');
+    await expect(ariaLabel).not.toBe('');
+  }
+});
+
+test('Check If Rectangle Exists in Begin', async ({ page }) => {
+  await page.goto(beginURL);
+  const rectangleSelector = '.rectangle';
+  await page.waitForSelector(rectangleSelector);
+  const isRectangleExists = await page.$(rectangleSelector) !== null;
+  await expect(isRectangleExists).toBe(true);
 });
 
 /* Journey page tests */
@@ -151,6 +241,27 @@ test('Skills links to Skills page from Journey', async ({ page }) => {
   await expect(currentURL).toBe(skillsURL);
 });
 
+test('All links in journey have aria-labels', async ({ page }) => {
+  await page.goto(journeyURL);
+
+  // Locate all <a> elements within the <body> element.
+  const links = await page.$$('body a');
+
+  // Iterate through each <a> element and check for the presence of aria-label attribute.
+  for (const link of links) {
+    const ariaLabel = await link.getAttribute('aria-label');
+    await expect(ariaLabel).not.toBe('');
+  }
+});
+
+test('Check If Rectangle Exists in Journey', async ({ page }) => {
+  await page.goto(journeyURL);
+  const rectangleSelector = '.rectangle';
+  await page.waitForSelector(rectangleSelector);
+  const isRectangleExists = await page.$(rectangleSelector) !== null;
+  await expect(isRectangleExists).toBe(true);
+});
+
 /* Experience page tests */
 test("Experience page has Xavier's Experience title", async ({ page }) => {
   await page.goto(experienceURL);
@@ -198,6 +309,28 @@ test('Skills links to Skills page from Experience', async ({ page }) => {
   await expect(currentURL).toBe(skillsURL);
 });
 
+test('All links in experience have aria-labels', async ({ page }) => {
+  await page.goto(experienceURL);
+
+  // Locate all <a> elements within the <body> element.
+  const links = await page.$$('body a');
+
+  // Iterate through each <a> element and check for the presence of aria-label attribute.
+  for (const link of links) {
+    const ariaLabel = await link.getAttribute('aria-label');
+    await expect(ariaLabel).not.toBe('');
+  }
+});
+
+test('Check If Rectangle Exists in Experience', async ({ page }) => {
+  await page.goto(experienceURL);
+  const rectangleSelector = '.rectangle';
+  await page.waitForSelector(rectangleSelector);
+  const isRectangleExists = await page.$(rectangleSelector) !== null;
+  await expect(isRectangleExists).toBe(true);
+});
+
+
 /* Projects page tests */
 test("Projects page has Xavier's Projects title", async ({ page }) => {
   await page.goto(projectsURL);
@@ -243,6 +376,27 @@ test('Skills links to Skills page from Projects', async ({ page }) => {
   await skillsLink.click();
   const currentURL = page.url();
   await expect(currentURL).toBe(skillsURL);
+});
+
+test('All links in projects have aria-labels', async ({ page }) => {
+  await page.goto(projectsURL);
+
+  // Locate all <a> elements within the <body> element.
+  const links = await page.$$('body a');
+
+  // Iterate through each <a> element and check for the presence of aria-label attribute.
+  for (const link of links) {
+    const ariaLabel = await link.getAttribute('aria-label');
+    await expect(ariaLabel).not.toBe('');
+  }
+});
+
+test('Check If Rectangle Exists in Projects', async ({ page }) => {
+  await page.goto(projectsURL);
+  const rectangleSelector = '.rectangle';
+  await page.waitForSelector(rectangleSelector);
+  const isRectangleExists = await page.$(rectangleSelector) !== null;
+  await expect(isRectangleExists).toBe(true);
 });
 
 /* Skills page tests */
@@ -302,4 +456,25 @@ test('Check meta keywords and description', async ({ page }) => {
   // Check the content of the meta description tag
   const description = await page.$eval('meta[name="description"]', (meta) => meta.getAttribute('content'));
   await expect(description).not.toBe(null);
+});
+
+test('All links in skills have aria-labels', async ({ page }) => {
+  await page.goto(skillsURL);
+
+  // Locate all <a> elements within the <body> element.
+  const links = await page.$$('body a');
+
+  // Iterate through each <a> element and check for the presence of aria-label attribute.
+  for (const link of links) {
+    const ariaLabel = await link.getAttribute('aria-label');
+    await expect(ariaLabel).not.toBe('');
+  }
+});
+
+test('Check If Rectangle Exists in Skills', async ({ page }) => {
+  await page.goto(skillsURL);
+  const rectangleSelector = '.rectangle';
+  await page.waitForSelector(rectangleSelector);
+  const isRectangleExists = await page.$(rectangleSelector) !== null;
+  await expect(isRectangleExists).toBe(true);
 });
