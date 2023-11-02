@@ -101,39 +101,14 @@ h2 {
     padding-top: 3%;
 }
 
-.left-column {
-    width: 48%;
-    display: flex;
+.image-container, .text {
+    --ImageWidth: 35vw;
+    --ImageHeight: calc(var(--ImageWidth) * 292 / 568 );
+    width: var(--ImageWidth); 
+    height: var(--ImageHeight); 
 }
 
-.right-column {
-    width: 48%;
-}
-
-.unrealProject .text {
-    text-align: left;
-    margin: 0; 
-    padding: 0; 
-}
-
-.unrealProject .text h2 {
-    font-size: 2vw;
-    margin: 0; 
-    padding: 0; 
-}
-
-.unrealProject .text h3 {
-    font-size: 1.5vw; 
-    margin: 0; 
-    padding: 0; 
-}
-
-.unrealProject .text p {
-    margin-top: 5%; 
-    font-size: 1.5vw; 
-}
-
-.unrealProject .image-container {
+.image-container {
     --ImageWidth: 35vw;
     --ImageHeight: calc(var(--ImageWidth) * 292 / 568 );
     width: var(--ImageWidth); 
@@ -143,9 +118,49 @@ h2 {
     overflow: hidden;
 }
 
-.unrealProject .image-container img {
+.image-container img {
     max-width: 100%; 
     display: block;
+}
+
+
+.left-column {
+    width: 48%;
+}
+
+.right-column {
+    width: 48%;
+}
+
+.unrealProject, .networkingTools, .droneProject {
+    padding-bottom: 15%;
+}
+
+.text {
+    text-align: left;
+    margin: 0; 
+    padding: 0; 
+}
+
+.text h2 {
+    font-size: 2vw;
+    margin: 0; 
+    padding: 0; 
+}
+
+.text h3 {
+    font-size: 1.5vw; 
+    margin: 0; 
+    padding: 0; 
+}
+
+p {
+    margin-top: 5%; 
+    font-size: 1.25vw; 
+}
+
+.skills {
+    font-size: 0.94vw;
 }
 
 .rectangleBorder {
@@ -156,6 +171,7 @@ h2 {
     bottom: 0;
     z-index: 200;
 }
+
 .rectangle {
     width: 100vw;
     height: 2.71vh; 
