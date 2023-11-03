@@ -21,6 +21,8 @@ body, html {
     background: url('../../images/desktop/hero/BACKGROUND_Blackboard.webp') no-repeat center center fixed; 
     background-size: cover; 
     overflow-x: hidden;
+    color: #fafafabe;
+    font-size: 1vw;
 }
 
 body {
@@ -71,28 +73,103 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.main-content-text {
-    padding-top: 9.66vw;
-    padding-left: 6.16vw; 
-    height: calc(100% - 5.9vw); 
+.main-content {
+    position: absolute;
+    padding-top: 5%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
-.main-content-text .paragraph, .para-title {
-    color: #fafafad2;
-}
-
-.main-content-text .paragraph {
-    font-size: 1.93vw; 
-    font-family: 'Roboto', sans-serif;
-    width: 40vw;     
-    height: 70vh;    
-    overflow: auto;
-}
-
-.main-content-text .para-title {
-    font-size: 3.1vw;
-    font-family: 'Judson', serif;
+h1, h2 {
     text-decoration: underline;
+    font-family: 'Judson', serif;
+    color: #fafafabe;
+    font-size: 4vw;
+}
+
+h2 {
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+.image-container, .text {
+    --ImageWidth: 35vw;
+    --ImageHeight: calc(var(--ImageWidth) * 292 / 568 );
+    width: var(--ImageWidth); 
+    height: var(--ImageHeight); 
+}
+
+.image-container {
+    --ImageWidth: 35vw;
+    --ImageHeight: calc(var(--ImageWidth) * 292 / 568 );
+    width: var(--ImageWidth); 
+    height: var(--ImageHeight); 
+    border: 0.15vw solid rgb(90, 7, 35);
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%; 
+    display: block;
+}
+
+
+.left-column {
+    width: 48%;
+}
+
+.right-column {
+    width: 48%;
+}
+
+.unrealProject, .networkingTools, .droneProject {
+    padding-bottom: 15%;
+}
+
+.text {
+    text-align: left;
+    margin: 0; 
+    padding: 0; 
+}
+
+.text h2 {
+    font-size: 2vw;
+    margin: 0; 
+    padding: 0; 
+}
+
+.text h3 {
+    font-size: 1.5vw; 
+    margin: 0; 
+    padding: 0; 
+}
+
+p {
+    margin-top: 5%; 
+    font-size: 1.25vw; 
+}
+
+.skills {
+    font-size: 0.94vw;
+}
+
+.rectangleBorder {
+    width: 100%;
+    height: 1vw; 
+    background: #fafafabe;
+    position: relative;
+    bottom: 0;
+    z-index: 200;
 }
 
 .rectangle {
