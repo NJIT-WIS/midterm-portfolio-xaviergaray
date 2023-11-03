@@ -21,6 +21,8 @@ body, html {
     background: url('../../images/desktop/hero/BACKGROUND_Blackboard.webp') no-repeat center center fixed; 
     background-size: cover; 
     overflow-x: hidden;
+    color: #fafafabe;
+    font-size: 1vw;
 }
 
 body {
@@ -71,28 +73,66 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.main-content-text {
-    padding-top: 9.66vw;
-    padding-left: 6.16vw; 
-    height: calc(100% - 5.9vw); 
-}
-
-.main-content-text .paragraph, .para-title {
-    color: #fafafad2;
-}
-
-.main-content-text .paragraph {
-    font-size: 1.93vw; 
-    font-family: 'Roboto', sans-serif;
-    width: 40vw;     
-    height: 70vh;    
-    overflow: auto;
-}
-
-.main-content-text .para-title {
-    font-size: 3.1vw;
+h1, h2 {
     font-family: 'Judson', serif;
+    color: #fafafabe;
+    font-size: 4vw;
+}
+
+h1 {
     text-decoration: underline;
+    text-align: center;
+    padding-top: 5%;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define columns, adjust width as needed */
+    grid-gap: 20px; /* Adjust the gap between items */
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.iconAndName {
+    display: flex;
+    align-items: center;
+}
+
+.iconAndName i {
+    margin-right: 1vw;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+img {
+    width: 3em;
+    height: 3em;
+    filter: brightness(0.80);
+}
+
+.skill:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    transition: box-shadow 0.3s;
 }
 
 .rectangle {
