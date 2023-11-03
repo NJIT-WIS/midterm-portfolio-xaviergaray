@@ -21,6 +21,8 @@ body, html {
     background: url('../../images/desktop/hero/BACKGROUND_Blackboard.webp') no-repeat center center fixed; 
     background-size: cover; 
     overflow-x: hidden;
+    color: #fafafabe;
+    font-size: 1vw;
 }
 
 body {
@@ -77,22 +79,40 @@ body {
     height: calc(100% - 5.9vw); 
 }
 
-.main-content-text .paragraph, .para-title {
-    color: #fafafad2;
+.main-content {
+    position: absolute;
+    padding-top: 5%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
-.main-content-text .paragraph {
-    font-size: 1.93vw; 
-    font-family: 'Roboto', sans-serif;
-    width: 40vw;     
-    height: 70vh;    
-    overflow: auto;
-}
-
-.main-content-text .para-title {
-    font-size: 3.1vw;
+h1, h2 {
     font-family: 'Judson', serif;
-    text-decoration: underline;
+    color: #fafafabe;
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+.event {
+    width: 50%;
+    text-align: left;
+}
+
+.date {
+    width: 40%;
+    text-align: left;
 }
 
 .rectangle {
