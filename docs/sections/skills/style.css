@@ -130,6 +130,11 @@ img {
     filter: brightness(0.80);
 }
 
+.skill:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    transition: box-shadow 0.3s;
+}
+
 .rectangle {
     width: 100vw;
     height: 2.71vh; 
