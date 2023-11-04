@@ -106,7 +106,7 @@ h2 {
 }
 
 .event {
-    width: 50%;
+    width: 48%;
     text-align: left;
 }
 
@@ -122,4 +122,33 @@ h2 {
     position: fixed;
     bottom: 0;
     z-index: 200;
+}
+
+.verticalRectangle {
+    width: 0.7em; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height to cover the entire viewport height */
+    background-color: #85396f; /* Adjust the background color as needed */
+    position: absolute;
+    left: 50%; /* Place it in the center horizontally */
+    transform: translateX(-50%); /* Center the rectangle horizontally */
+}
+
+/* Style for the circle */
+.circle {
+    width: 1.4em; /* Adjust the circle size as needed */
+    height: 1.4em; /* Make it a perfect circle */
+    background-color: #fafafa; /* Adjust the circle color as needed */
+    border-radius: 50%; /* Make it a circle */
+    position: relative;
+    left: -3.14em;
+    top: 1.9em;
+}
+
+.introduction {
+    font-size: 1.5em;
+    padding-bottom: 1%;
+}
+
+emphasis {
+    text-decoration: underline;
 }
