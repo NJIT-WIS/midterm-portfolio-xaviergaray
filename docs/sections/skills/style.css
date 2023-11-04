@@ -22,7 +22,7 @@ body, html {
     background-size: cover; 
     overflow-x: hidden;
     color: #fafafabe;
-    font-size: 1vw;
+    font-size: 1em;
 }
 
 body {
@@ -76,7 +76,7 @@ body {
 h1, h2 {
     font-family: 'Judson', serif;
     color: #fafafabe;
-    font-size: 4vw;
+    font-size: 4em;
 }
 
 h1 {
@@ -86,7 +86,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 2em;
 }
 
 .main {
@@ -99,6 +99,7 @@ h2 {
 }
 
 .skill {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,6 +114,7 @@ h2 {
 .iconAndName {
     display: flex;
     align-items: center;
+    height: 6.5em;
 }
 
 .iconAndName i {
@@ -142,4 +144,24 @@ img {
     position: fixed;
     bottom: 0;
     z-index: 200;
+}
+
+.custom-text {
+    display: none;
+    position: relative;
+    color: #fafafabe;
+    padding: 5px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    align-items: center;
+}
+
+.custom-text p {
+    font-size: 1em;
+}
+
+.custom-text a {
+    color: #fafafabe;
 }
