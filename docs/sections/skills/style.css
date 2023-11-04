@@ -114,6 +114,7 @@ h2 {
 .iconAndName {
     display: flex;
     align-items: center;
+    height: 6.5em;
 }
 
 .iconAndName i {
@@ -154,6 +155,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    align-items: center;
 }
 
 .custom-text p {
@@ -161,6 +163,5 @@ img {
 }
 
 .custom-text a {
-    text-decoration: none;
     color: #fafafabe;
 }
