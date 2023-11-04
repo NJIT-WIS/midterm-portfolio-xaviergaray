@@ -22,7 +22,7 @@ body, html {
     background-size: cover; 
     overflow-x: hidden;
     color: #fafafabe;
-    font-size: 1vw;
+    font-size: 1em;
 }
 
 body {
@@ -76,7 +76,7 @@ body {
 h1, h2 {
     font-family: 'Judson', serif;
     color: #fafafabe;
-    font-size: 4vw;
+    font-size: 4em;
 }
 
 h1 {
@@ -86,7 +86,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 2em;
 }
 
 .main {
