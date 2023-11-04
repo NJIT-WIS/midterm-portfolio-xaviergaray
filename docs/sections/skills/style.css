@@ -99,6 +99,7 @@ h2 {
 }
 
 .skill {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,4 +143,24 @@ img {
     position: fixed;
     bottom: 0;
     z-index: 200;
+}
+
+.custom-text {
+    display: none;
+    position: relative;
+    color: #fafafabe;
+    padding: 5px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.custom-text p {
+    font-size: 1em;
+}
+
+.custom-text a {
+    text-decoration: none;
+    color: #fafafabe;
 }
