@@ -93,7 +93,7 @@
         <div class="row">
             <div class="event">
                 <h2>Software Engineer at L3 Harris</h2>
-                <p>Began working as a Software Engineer at L3 Harris in the Space and Airborne Systems segment. My main duties include maintaining and developing decoders/monitors/analyzers for messages sent within F/A-18 series fighter jets</p>
+                <p>Began working as a Software Engineer at L3 Harris in the Space and Airborne Systems segment. My main duties include maintaining and developing decoders, monitors, and analyzers for messages sent within F/A-18 series fighter jets</p>
             </div>
             <div class="circle"></div>
             <div class="date">
@@ -112,8 +112,29 @@
             </div>
         </div>
 
+        <div class="buttons">
+            <button class="button" onclick="location.href='../journey/journey.html';" aria-label="Explore my journey">
+                <a href="../journey/journey.html" aria-label="Explore my journey">Who Am I</a>
+            </button>
+            <button class="button" onclick="location.href='../experience/experience.html';" aria-label="Learn about my experiences">
+                <a href="../experience/experience.html" aria-label="Learn about my experiences">What Have I Done</a>
+            </button>
+            <button class="button" onclick="location.href='../projects/projects.html';" aria-label="Visit my projects">
+                <a href="../projects/projects.html" aria-label="Visit my projects">What Have I Made</a>
+            </button>
+            <button class="button" onclick="location.href='../skills/skills.html';" aria-label="View my skills">
+                <a href="../skills/skills.html" aria-label="View my skills">What Can I Do</a>
+            </button>
+        </div>
     </div>
     
     <div class="rectangle"></div>
+
+    <script type="text/javascript">
+        document.getElementsByClassName("button").onclick = function () {
+            location.href = "www.yoursite.com";
+        };
+    </script>
+    
 </body>
 </html>
