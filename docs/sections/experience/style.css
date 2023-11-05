@@ -97,6 +97,12 @@ h1 {
 
 h2 {
     font-size: 2em;
+    color: #b9a6e9;
+}
+
+h3 {
+    color: #a4b0b1;
+    font-size: 150%;
 }
 
 .row {
