@@ -82,15 +82,24 @@ body {
 }
 
 h1, h2 {
-    text-decoration: underline;
     font-family: 'Judson', serif;
+
+}
+
+h1 {
+    text-decoration: underline;
     color: #fafafabe;
     font-size: 4em;
 }
 
 h2 {
-    text-decoration: none;
     font-size: 2em;
+    color: #b9a6e9;
+}
+
+h3 {
+    color: #a4b0b1;
+    font-size: 150%;
 }
 
 .columns {
@@ -122,7 +131,6 @@ h2 {
     max-width: 100%; 
     display: block;
 }
-
 
 .left-column {
     width: 48%;
@@ -161,6 +169,7 @@ p {
 
 .skills {
     font-size: 0.94vw;
+    color: #cda658;
 }
 
 .rectangleBorder {
