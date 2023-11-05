@@ -94,7 +94,7 @@ a:hover, .button:hover a, a:focus, .button:focus a {
 
 .main-content p a {
     text-decoration: none;
-    color: #fafafabe;
+    color: #8cb2d4;
     transition: background-color 0.3s, text-shadow 0.3s, box-shadow 0.3s;
 }
 
