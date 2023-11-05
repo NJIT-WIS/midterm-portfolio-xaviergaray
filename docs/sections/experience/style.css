@@ -25,6 +25,7 @@ body, html {
 
 body {
     position: relative;
+    color: #fafafabe;
 }
 
 .navbar {
@@ -71,28 +72,72 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.main-content-text {
-    padding-top: 9.66vw;
-    padding-left: 6.16vw; 
-    height: calc(100% - 5.9vw); 
+.main {
+    position: absolute;
+    padding-top: 7%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
-.main-content-text .paragraph, .para-title {
-    color: #fafafad2;
+.title {
+    margin-bottom: 5%;
 }
 
-.main-content-text .paragraph {
-    font-size: 1.93vw; 
-    font-family: 'Roboto', sans-serif;
-    width: 40vw;     
-    height: 70vh;    
-    overflow: auto;
-}
-
-.main-content-text .para-title {
-    font-size: 3.1vw;
+h1, h2 {
     font-family: 'Judson', serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 4em;
     text-decoration: underline;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.image {
+    width: 15%;
+    height: 15%;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%; 
+    display: block;
+}
+
+.text, .dates {
+    text-align: left;
+    max-width: 30%;
+    align-self: flex-start;
+}
+
+.text p, .dates {
+    font-size: 1.5em;
+}
+
+.rectangleBorder {
+    width: 80%;
+    margin-left: 10%;
+    height: 2.71vh; 
+    background: radial-gradient(circle at center, #917c09,#3e2d50);
+}
+
+#finalBorder {
+    margin-bottom: 10%;
 }
 
 .rectangle {
@@ -102,4 +147,26 @@ body {
     position: fixed;
     bottom: 0;
     z-index: 200;
+}
+
+@media (max-width: 800px) {
+    .text p {
+        margin-left: -90%;
+        max-width: 80vw;
+        width: 80vw;
+        font-size: 1em;
+        text-wrap: wrap;
+    }
+
+    .title {
+        font-size: 80%;
+    }
+
+    .text h2, .dates {
+        font-size: 100%;
+    }
+
+    .text h3 {
+        font-size: 62.5%
+    }
 }
