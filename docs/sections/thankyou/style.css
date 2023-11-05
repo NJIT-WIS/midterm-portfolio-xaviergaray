@@ -1,0 +1,200 @@
+:root {
+    --beginCirclePosX: 7vw;
+    --beginCirclePosY: 60vh;
+
+    --journeyCirclePosY: 85vh;
+    --journeyCirclePosX: 25vw;
+
+    --journeyCircleRad: 5vw;
+
+    --largeCircleRadius:100px;
+    --smallCircleRadius:80px;
+    --journeyStart: 35vh;
+    --journeySpacing: calc(var(--smallCircleRadius) * 2 / 1.6);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background: url('../../images/desktop/hero/BACKGROUND_Blackboard.webp') no-repeat center center fixed; 
+    background-size: cover; 
+    overflow-x: hidden;
+    color: #fafafabe;
+    font-size: 1.1em;
+}
+
+body {
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030002af;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    padding: 0.53vw 1.07vw; 
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1.6vw; 
+    box-shadow: 0px 0.53vw 0.53vw rgba(0, 0, 0, 0.8); 
+    border-radius: 0.43vw; 
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.53vw 2.14vw;
+    transition: background-color 0.3s, text-shadow 0.3s, box-shadow 0.3s;
+}
+
+.navbar a:hover {
+    text-shadow: 0px 0px 0.53vw #fff, 0px 0px 0.27vw #aaa;
+}
+
+.navbar a:focus {
+    text-shadow: 0px 0px 0.53vw #fff, 0px 0px 0.27vw #aaa;
+}
+
+.nav-links-left {
+    font-size: 1.21vw;
+    font-family: 'Inria Serif', serif;
+}
+
+.nav-links-right {
+    font-size: 1.93vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-content-text {
+    padding-top: 10em;
+    padding-left: 6em; 
+    height: calc(100% - 6em); 
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.main-content {
+    position: absolute;
+    padding-top: 5%;
+    width: 90%;
+    left: 5%;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Judson', serif;
+    color: #fafafabe;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+.event {
+    width: 48%;
+    text-align: left;
+}
+
+.date {
+    width: 40%;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding-top: 5%;
+}
+
+.button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 10em;
+    height: 3em;
+    background-color: #4e123d;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 4vw;
+    border-radius: 15px;
+    line-height: 3em; 
+    font-family: 'Cinzel Decorative', sans-serif;
+    text-shadow: 2px 2px 4px #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.button:hover {
+    background-color: #200d35;
+}
+
+.rectangle {
+    width: 100vw;
+    height: 2.71vh; 
+    background: radial-gradient(circle at center, #85396f,#3e2d50);
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+}
+
+.verticalRectangle {
+    width: 0.7em; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height to cover the entire viewport height */
+    background-color: #85396f; /* Adjust the background color as needed */
+    position: absolute;
+    left: 50%; /* Place it in the center horizontally */
+    transform: translateX(-50%); /* Center the rectangle horizontally */
+}
+
+/* Style for the circle */
+.circle {
+    width: 1.5em; /* Adjust the circle size as needed */
+    height: 1.5em; /* Make it a perfect circle */
+    background-color: #fafafa; /* Adjust the circle color as needed */
+    border-radius: 50%; /* Make it a circle */
+    position: relative;
+    left: -4%;
+    top: 1.9em;
+}
+
+.text {
+    font-size: 1.5em;
+    padding-bottom: 1%;
+}
