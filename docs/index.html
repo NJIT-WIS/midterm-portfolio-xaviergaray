@@ -62,6 +62,10 @@
             var modal = document.getElementById('myModal');
             modal.style.display = 'none';
         }
+
+        function redirectToNewPage() {
+            window.location.href = './sections/thankyou/thankyou.html';
+        }
     </script>
 
     <div class="navbar">
@@ -115,7 +119,7 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <form>
+            <form onsubmit="redirectToNewPage(); return false;">
                 <label for="name">Name (required):</label>
                 <input type="text" id="name" required><br><br>
 
