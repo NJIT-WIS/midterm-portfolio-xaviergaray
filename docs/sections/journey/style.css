@@ -80,7 +80,7 @@ body {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 100%;
 }
 
 .main-content {
@@ -95,11 +95,11 @@ p {
 h1, h2 {
     font-family: 'Judson', serif;
     color: #fafafabe;
-    font-size: 4em;
 }
 
 h2 {
-    font-size: 2em;
+    width: 100%;
+    font-size: 160%;
 }
 
 .row {
@@ -175,7 +175,7 @@ h2 {
 }
 
 .verticalRectangle {
-    width: 0.7em; /* Adjust the width as needed */
+    width: 2%; /* Adjust the width as needed */
     height: 100%; /* Adjust the height to cover the entire viewport height */
     background-color: #85396f; /* Adjust the background color as needed */
     position: absolute;
@@ -185,8 +185,8 @@ h2 {
 
 /* Style for the circle */
 .circle {
-    width: 1.5em; /* Adjust the circle size as needed */
-    height: 1.5em; /* Make it a perfect circle */
+    width: 3vw; /* Adjust the circle size as needed */
+    height: 3vw; /* Make it a perfect circle */
     background-color: #fafafa; /* Adjust the circle color as needed */
     border-radius: 50%; /* Make it a circle */
     position: relative;
@@ -195,7 +195,7 @@ h2 {
 }
 
 .introduction {
-    font-size: 1.5em;
+    font-size: 100%;
     padding-bottom: 1%;
 }
 
@@ -205,4 +205,14 @@ emphasis {
 
 negative-emphasis {
     color: #b87c7c;
+}
+
+@media (max-width: 950px) {
+    p {
+        font-size: 62.5%
+    }
+
+    h2 {
+        font-size: 100%
+    }
 }
